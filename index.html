@@ -4,133 +4,131 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Haseeb | DevOps Portfolio</title>
-
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-
 <body>
 
 <header>
-    <h1>Haseeb H</h1>
-    <p>Aspiring DevOps Engineer</p>
+    <div class="header-container">
+        <h1>Haseeb H</h1>
+        <p class="subtitle">Aspiring DevOps Engineer</p>
+    </div>
 </header>
 
 <nav>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#certifications">Certifications</a>
-    <a href="#contact">Contact</a>
+    <a href="#about"><i class="fa-solid fa-user"></i> About</a>
+    <a href="#skills"><i class="fa-solid fa-code"></i> Skills</a>
+    <a href="#projects"><i class="fa-solid fa-layer-group"></i> Projects</a>
+    <a href="#certifications"><i class="fa-solid fa-certificate"></i> Certifications</a>
+    <a href="#contact"><i class="fa-solid fa-envelope"></i> Contact</a>
 </nav>
 
-<section id="about">
-    <h2>About Me</h2>
-    <p>
-        I am Software Engineering Student & Aspiring DevOps Engineer also learning DevOps and Cloud technologies.
-        My goal is to become a DevOps Engineer and work remotely.
-        Currently I am studying at Nehru College of Engineering and Research Centre with a passion for building scalable systems and automating workflows. Bridging the gap between code and infrastructure, I specialize in Linux (Ubuntu) environments, cloud deployments, and containerization. My practical experience includes a dedicated DevOps Internship Program where I engineered hands-on infrastructure tasks, as well as designing pipelines like my Dockerized Web Application Deployment on AWS EC2 with CI/CD. Backed by certifications from Microsoft and Techcake, I focus on transforming complex deployment workflows into seamless, automated pipelines."
-    </p>
-</section>
+<main class="container">
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            I am a Software Engineering Student & Aspiring DevOps Engineer with a passion for building scalable systems and automating workflows. Currently studying at Nehru College of Engineering and Research Centre, I focus on bridging the gap between code and infrastructure, specializing in Linux (Ubuntu) environments, cloud deployments, and containerization. 
+        </p>
+        <p>
+            My practical experience includes a dedicated DevOps Internship Program where I engineered hands-on infrastructure tasks, alongside designing automated pipelines like Dockerized Web Application Deployments on AWS EC2. I am driven to transform complex deployment workflows into seamless, reliable CI/CD pipelines.
+        </p>
+    </section>
 
-<section id="skills">
-    <h2>Skills</h2>
+    <section id="skills">
+        <h2>Technical Skills</h2>
+        <div class="skills-grid">
+            <span class="skill-badge"><i class="fa-brands fa-linux"></i> Linux</span>
+            <span class="skill-badge"><i class="fa-brands fa-git-alt"></i> Git & GitHub</span>
+            <span class="skill-badge"><i class="fa-brands fa-docker"></i> Docker</span>
+            <span class="skill-badge"><i class="fa-solid fa-gears"></i> GitHub Actions</span>
+            <span class="skill-badge"><i class="fa-brands fa-aws"></i> AWS (EC2, S3)</span>
+            <span class="skill-badge"><i class="fa-solid fa-network-wired"></i> Kubernetes</span>
+            <span class="skill-badge"><i class="fa-brands fa-jenkins"></i> Jenkins</span>
+            <span class="skill-badge"><i class="fa-solid fa-infinity"></i> CI/CD Pipelines</span>
+            <span class="skill-badge"><i class="fa-solid fa-cloud"></i> Cloud Computing</span>
+            <span class="skill-badge"><i class="fa-brands fa-ubuntu"></i> Ubuntu Server</span>
+        </div>
+    </section>
 
-    <ul>
-        <li>Linux</li>
-        <li>Git & GitHub</li>
-        <li>Docker</li>
-        <li>GitHub Actions</li>
-        <li>AWS EC2</li>
-        <li>Kubernetes</li>
-        <li>Jenkins</li>
-        <li>CI/CD</li>
-        <li>Cloud Computing</li>
-        <li>Ubuntu</li>
-    </ul>
-</section>
+    <section id="projects">
+        <h2>Featured DevOps Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3><i class="fa-brands fa-docker"></i> Dockerized Node.js Web App</h3>
+                <p>Containerized a Node.js application using multi-stage Docker builds to optimize image sizes and enhance runtime security wrappers.</p>
+            </div>
+            <div class="project-card">
+                <h3><i class="fa-brands fa-aws"></i> AWS Static Website Hosting</h3>
+                <p>Hosted a secure, high-availability website using AWS S3 for storage and Amazon CloudFront as a CDN for low-latency global delivery.</p>
+            </div>
+            <div class="project-card">
+                <h3><i class="fa-brands fa-jenkins"></i> Jenkins CI/CD Pipeline</h3>
+                <p>Architected a complete automation pipeline that triggers on git commits, runs unit tests, builds artifacts, and deploys to target servers.</p>
+            </div>
+            <div class="project-card">
+                <h3><i class="fa-solid fa-network-wired"></i> Kubernetes Deployment</h3>
+                <p>Orchestrated containerized applications using Minikube, managing scaling configurations, internal services, and deployment rollouts.</p>
+            </div>
+        </div>
+    </section>
 
+    <section id="certifications">
+        <h2>Certifications</h2>
+        <div class="cert-grid">
+            <div class="cert-card">
+                <h4>MATLAB Training</h4>
+                <p class="issuer">MathWorks</p>
+                <a href="#" class="cert-link">View Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+            <div class="cert-card">
+                <h4>Advanced AI Program</h4>
+                <p class="issuer">NxtWave</p>
+                <a href="#" class="cert-link">View Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+            <div class="cert-card">
+                <h4>Meta AI: Prompt Generation</h4>
+                <p class="issuer">Meta</p>
+                <a href="#" class="cert-link">View Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+            <div class="cert-card">
+                <h4>Technical Course Compliance</h4>
+                <p class="issuer">World Health Organization</p>
+                <a href="#" class="cert-link">View Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+            <div class="cert-card">
+                <h4>Game Designing & Architecture</h4>
+                <p class="issuer">Online Learning</p>
+                <a href="#" class="cert-link">View Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+        </div>
+    </section>
 
-<section id="projects">
-    <h2>Projects</h2>
-
-    <div>
-        <h3>Dockerized Node.js Web App</h3>
-        <p>Containerized a Node.js application using Docker.</p>
-    </div>
-
-     <div>
-        <h3>AWS Static Website Hosting </h3>
-        <p>Hosting website using AWS S3 and CloudFront.</p>
-    </div>
-
-    <div>
-        <h3>Jenkins CI/CD Pipeline</h3>
-        <p>Automated build and deployment process.</p>
-    </div>
-
-     <div>
-        <h3>Kubernetes Deployment</h3>
-        <p>Deployed and managed containerized applications using Minikube.</p>
-    </div>
-
-</section>
-
-<section id="certifications">
-    <h2>Certifications</h2>
-
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; font-family: sans-serif;">
-
-  <!-- MATLAB -->
-  <div style="background: #fff; border: 1px solid #ddd; padding: 15px; border-radius: 8px;">
-    <h4 style="margin: 0 0 5px 0; color: #333;">MATLAB Training</h4>
-    <p style="margin: 0 0 10px 0; font-size: 14px; color: #666;">MathWorks</p>
-    <a href="" style="color: #0066cc; text-decoration: none; font-size: 13px; font-weight: bold;">View Certificate →</a>
-  </div>
-
-  <!-- NxtWave -->
-  <div style="background: #fff; border: 1px solid #ddd; padding: 15px; border-radius: 8px;">
-    <h4 style="margin: 0 0 5px 0; color: #333;">Advanced AI Program</h4>
-    <p style="margin: 0 0 10px 0; font-size: 14px; color: #666;">NxtWave</p>
-    <a href="" style="color: #0066cc; text-decoration: none; font-size: 13px; font-weight: bold;">View Certificate →</a>
-  </div>
-
-  <!-- Meta AI -->
-  <div style="background: #fff; border: 1px solid #ddd; padding: 15px; border-radius: 8px;">
-    <h4 style="margin: 0 0 5px 0; color: #333;">Meta AI: Prompt Generation</h4>
-    <p style="margin: 0 0 10px 0; font-size: 14px; color: #666;">Meta</p>
-    <a href="#" style="color: #0066cc; text-decoration: none; font-size: 13px; font-weight: bold;">View Certificate →</a>
-  </div>
-
-  <!-- WHO -->
-  <div style="background: #fff; border: 1px solid #ddd; padding: 15px; border-radius: 8px;">
-    <h4 style="margin: 0 0 5px 0; color: #333;">Technical Course Compliance</h4>
-    <p style="margin: 0 0 10px 0; font-size: 14px; color: #666;">World Health Organization</p>
-    <a href="#" style="color: #0066cc; text-decoration: none; font-size: 13px; font-weight: bold;">View Certificate →</a>
-  </div>
-
-  <!-- Game Design -->
-  <div style="background: #fff; border: 1px solid #ddd; padding: 15px; border-radius: 8px;">
-    <h4 style="margin: 0 0 5px 0; color: #333;">Game Designing & Architecture</h4>
-    <p style="margin: 0 0 10px 0; font-size: 14px; color: #666;">Online Learning</p>
-    <a href="#" style="color: #0066cc; text-decoration: none; font-size: 13px; font-weight: bold;">View Certificate →</a>
-  </div>
-
-</div>
-</section>
-
-
-
-<section id="contact">
-    <h2>Contact</h2>
-
-    <p>Email: haseebofficial2005@gmail.com</p>
-    <p>GitHub: https://github.com/haseeb-2005</p>
-    <p>LinkedIn: https://www.linkedin.com/in/haseeb-h-900951349</p>
-    <p>Mobile no: +919947467579</p>
-</section>
+    <section id="contact">
+        <h2>Get In Touch</h2>
+        <div class="contact-grid">
+            <a href="mailto:haseebofficial2005@gmail.com" class="contact-item">
+                <i class="fa-solid fa-envelope"></i>
+                <span>haseebofficial2005@gmail.com</span>
+            </a>
+            <a href="https://github.com/haseeb-2005" target="_blank" class="contact-item">
+                <i class="fa-brands fa-github"></i>
+                <span>GitHub Profile</span>
+            </a>
+            <a href="https://www.linkedin.com/in/haseeb-h-900951349" target="_blank" class="contact-item">
+                <i class="fa-brands fa-linkedin"></i>
+                <span>LinkedIn Profile</span>
+            </a>
+            <a href="tel:+919947467579" class="contact-item">
+                <i class="fa-solid fa-phone"></i>
+                <span>+91 99474 67579</span>
+            </a>
+        </div>
+    </section>
+</main>
 
 <footer>
-    <p>© 2026 Haseeb.H | DevOps-Portfolio</p>
+    <p>© 2026 Haseeb H | DevOps Portfolio Website</p>
 </footer>
 
 </body>
