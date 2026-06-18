@@ -1,5 +1,4 @@
 /* --- Core Variables & Reset --- */
-/* --- Core Variables & Reset --- */
 :root {
     --bg-main: #0f172a;       /* Dark slate background */
     --bg-card: #1e293b;       /* Slightly lighter card background */
@@ -8,6 +7,7 @@
     --accent: #06b6d4;        /* Cyan / DevOps Blue neon accent */
     --accent-hover: #22d3ee;  /* Bright neon cyan on hover */
     --border: #334155;        /* Subtle border lines */
+    --whatsapp: #25d366;      /* Official WhatsApp Green branding */
 }
 
 * {
@@ -58,15 +58,40 @@ header h1 {
     font-size: 1.25rem;
     color: var(--accent);
     font-weight: 500;
+    margin-bottom: 20px;
+}
+
+/* --- Resume Download Action Link --- */
+.header-actions {
+    margin-top: 15px;
+}
+
+.btn-resume {
+    background-color: var(--accent);
+    color: var(--bg-main);
+    padding: 10px 22px;
+    font-weight: 700;
+    font-size: 0.95rem;
+    text-decoration: none;
+    border-radius: 30px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.btn-resume:hover {
+    background-color: var(--accent-hover);
+    transform: translateY(-2px);
 }
 
 /* --- Profile Picture Styling --- */
 .profile-img {
     width: 130px;
     height: 130px;
-    border-radius: 50%; /* Makes it perfectly circular */
-    object-fit: cover;  /* Prevents distortion */
-    border: 3px solid var(--accent); /* Adds a sharp glowing neon ring */
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--accent);
     margin-bottom: 15px;
     box-shadow: 0 4px 15px rgba(6, 182, 212, 0.2);
 }
@@ -82,15 +107,13 @@ nav {
     border-bottom: 1px solid var(--border);
     display: flex;
     align-items: center;
-    justify-content: center; /* Centers items on desktop */
+    justify-content: center;
 }
 
-/* Hide the toggle checkbox everywhere */
 #menu-toggle {
     display: none;
 }
 
-/* Hide the hamburger icon on desktop layout screens */
 .menu-icon {
     display: none;
     font-size: 1.5rem;
@@ -169,6 +192,9 @@ section {
     border: 1px solid var(--border);
     border-radius: 8px;
     padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
 }
 
@@ -187,9 +213,47 @@ section {
 .project-card p, .cert-card .issuer {
     color: var(--text-muted);
     font-size: 0.95rem;
+    margin-bottom: 15px;
+    flex-grow: 1;
 }
 
-/* Hover States for Interactive Cards */
+/* --- Project Button Elements --- */
+.project-links {
+    display: flex;
+    gap: 10px;
+    margin-top: auto;
+}
+
+.btn-proj-action {
+    background-color: var(--accent);
+    color: var(--bg-main);
+    border: 1px solid var(--accent);
+    padding: 6px 14px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 4px;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    transition: all 0.2s ease;
+}
+
+.btn-proj-action:hover {
+    background-color: var(--accent-hover);
+    border-color: var(--accent-hover);
+}
+
+.btn-proj-action.outline {
+    background-color: transparent;
+    color: var(--accent);
+}
+
+.btn-proj-action.outline:hover {
+    background-color: rgba(6, 182, 212, 0.1);
+    color: var(--accent-hover);
+}
+
 .project-card:hover, .cert-card:hover {
     transform: translateY(-5px);
     border-color: var(--accent);
@@ -258,6 +322,13 @@ section {
     border-color: var(--accent);
 }
 
+.contact-item.contact-whatsapp:hover i {
+    color: var(--whatsapp);
+}
+.contact-item.contact-whatsapp:hover {
+    border-color: var(--whatsapp);
+}
+
 /* --- Footer --- */
 footer {
     background-color: #0b0f19;
@@ -269,23 +340,21 @@ footer {
     font-size: 0.9rem;
 }
 
-/* --- Mobile Breakpoints (Combined & Ordered Below Desktop) --- */
+/* --- Mobile Breakpoints --- */
 @media (max-width: 768px) {
     nav {
-        justify-content: flex-start; /* Aligns hamburger icon to the top left on mobile */
+        justify-content: flex-start;
         padding: 15px 20px;
     }
 
-    /* Show the 3-line bar icon on mobile screens */
     .menu-icon {
         display: block;
     }
 
-    /* Transform the links panel into a vertical drop-down list */
     .nav-links {
-        display: none; /* Hidden by default on mobile load */
+        display: none;
         position: absolute;
-        top: 100%; /* Sits exactly below the navbar */
+        top: 100%;
         left: 0;
         width: 100%;
         background-color: #0f172a;
@@ -302,7 +371,6 @@ footer {
         border-bottom: 1px solid rgba(51, 65, 85, 0.3);
     }
 
-    /* MAGIC HOOK: When the hidden checkbox is clicked, show the links menu! */
     #menu-toggle:checked ~ .nav-links {
         display: flex;
     }

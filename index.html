@@ -14,6 +14,13 @@
         <img src="images/profile.jpeg" alt="Haseeb H Profile" class="profile-img">
         <h1>Haseeb H</h1>
         <p class="subtitle">Aspiring DevOps Engineer</p>
+        
+        <!-- NEW: Resume Download Button (Item 4 in 1000757571_2.jpg) -->
+        <div class="header-actions">
+            <a href="pdf/resume.pdf" download class="btn-resume">
+                <i class="fa-solid fa-file-arrow-down"></i> Download Resume (PDF)
+            </a>
+        </div>
     </div>
 </header>
 
@@ -34,6 +41,7 @@
 </nav>
 
 <main class="container">
+    <!-- ABOUT SECTION -->
     <section id="about">
         <h2>About Me</h2>
         <p>
@@ -44,6 +52,7 @@
         </p>
     </section>
 
+    <!-- SKILLS SECTION -->
     <section id="skills">
         <h2>Technical Skills</h2>
         <div class="skills-grid">
@@ -60,32 +69,78 @@
         </div>
     </section>
 
+    <!-- PROJECTS SECTION -->
     <section id="projects">
         <h2>Featured DevOps Projects</h2>
         <div class="projects-grid">
+            
+            <!-- Project 1 -->
             <div class="project-card">
                 <h3><i class="fa-brands fa-docker"></i> Dockerized Node.js Web App</h3>
                 <p>Containerized a Node.js application using multi-stage Docker builds to optimize image sizes and enhance runtime security wrappers.</p>
+                <!-- NEW: Repo and Detail Links (Items 1 & 2 from 1000757571_2.jpg) -->
+                <div class="project-links">
+                    <a href="https://github.com/haseeb-2005/docker-nodejs-app" target="_blank" class="btn-proj-action">
+                        <i class="fa-brands fa-github"></i> View Code
+                    </a>
+                    <a href="images/docker-architecture.png" target="_blank" class="btn-proj-action outline">
+                        <i class="fa-solid fa-diagram-project"></i> Architecture
+                    </a>
+                </div>
             </div>
+
+            <!-- Project 2 -->
             <div class="project-card">
                 <h3><i class="fa-brands fa-aws"></i> AWS Static Website Hosting</h3>
                 <p>Hosted a secure, high-availability website using AWS S3 for storage and Amazon CloudFront as a CDN for low-latency global delivery.</p>
+                <!-- NEW: Repo and Detail Links -->
+                <div class="project-links">
+                    <a href="https://github.com/haseeb-2005/aws-static-hosting" target="_blank" class="btn-proj-action">
+                        <i class="fa-brands fa-github"></i> View Code
+                    </a>
+                    <a href="images/aws-architecture.png" target="_blank" class="btn-proj-action outline">
+                        <i class="fa-solid fa-diagram-project"></i> Architecture
+                    </a>
+                </div>
             </div>
+
+            <!-- Project 3 -->
             <div class="project-card">
                 <h3><i class="fa-brands fa-jenkins"></i> Jenkins CI/CD Pipeline</h3>
                 <p>Architected a complete automation pipeline that triggers on git commits, runs unit tests, builds artifacts, and deploys to target servers.</p>
+                <!-- NEW: Repo and Detail Links -->
+                <div class="project-links">
+                    <a href="https://github.com/haseeb-2005/jenkins-cicd-pipeline" target="_blank" class="btn-proj-action">
+                        <i class="fa-brands fa-github"></i> View Code
+                    </a>
+                    <a href="images/jenkins-workflow.png" target="_blank" class="btn-proj-action outline">
+                        <i class="fa-solid fa-diagram-project"></i> Workflow
+                    </a>
+                </div>
             </div>
+
+            <!-- Project 4 -->
             <div class="project-card">
                 <h3><i class="fa-solid fa-network-wired"></i> Kubernetes Deployment</h3>
                 <p>Orchestrated containerized applications using Minikube, managing scaling configurations, internal services, and deployment rollouts.</p>
+                <!-- NEW: Repo and Detail Links -->
+                <div class="project-links">
+                    <a href="https://github.com/haseeb-2005/k8s-deployment" target="_blank" class="btn-proj-action">
+                        <i class="fa-brands fa-github"></i> View Code
+                    </a>
+                    <a href="images/k8s-architecture.png" target="_blank" class="btn-proj-action outline">
+                        <i class="fa-solid fa-diagram-project"></i> Architecture
+                    </a>
+                </div>
             </div>
+
         </div>
     </section>
 
+    <!-- CERTIFICATIONS SECTION -->
     <section id="certifications">
         <h2>Certifications</h2>
         <div class="cert-grid">
-
             <div class="cert-card">
                 <h4>MATLAB Training</h4>
                 <p class="issuer">MathWorks</p>
@@ -115,7 +170,6 @@
                 <p class="issuer">INTERNSHIP</p>
                 <a href="images/techcake.jpeg" target="_blank" class="cert-link">View Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
             </div>
-            
 
             <div class="cert-card">
                 <h4>AWS-Agentic AI </h4>
@@ -125,6 +179,7 @@
         </div>
     </section>
 
+    <!-- CONTACT SECTION -->
     <section id="contact">
         <h2>Get In Touch</h2>
         <div class="contact-grid">
@@ -140,8 +195,8 @@
                 <i class="fa-brands fa-linkedin"></i>
                 <span>LinkedIn Profile</span>
             </a>
-            <a href="tel:+919947467579" class="contact-item">
-                <i class="fa-solid fa-phone"></i>
+            <a href="https://wa.me/919947467579" target="_blank" class="contact-item contact-whatsapp">
+                <i class="fa-brands fa-whatsapp"></i>
                 <span>+91 99474 67579</span>
             </a>
         </div>
