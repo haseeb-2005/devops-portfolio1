@@ -15,7 +15,6 @@
         <h1>Haseeb H</h1>
         <p class="subtitle">Aspiring DevOps Engineer</p>
         
-        <!-- NEW: Resume Download Button (Item 4 in 1000757571_2.jpg) -->
         <div class="header-actions">
             <a href="pdf/resume.pdf" download class="btn-resume">
                 <i class="fa-solid fa-file-arrow-down"></i> Download Resume (PDF)
@@ -41,7 +40,6 @@
 </nav>
 
 <main class="container">
-    <!-- ABOUT SECTION -->
     <section id="about">
         <h2>About Me</h2>
         <p>
@@ -52,7 +50,6 @@
         </p>
     </section>
 
-    <!-- SKILLS SECTION -->
     <section id="skills">
         <h2>Technical Skills</h2>
         <div class="skills-grid">
@@ -69,16 +66,26 @@
         </div>
     </section>
 
-    <!-- PROJECTS SECTION -->
     <section id="projects">
         <h2>Featured DevOps Projects</h2>
         <div class="projects-grid">
             
-            <!-- Project 1 -->
+            <div class="project-card">
+                <h3><i class="fa-solid fa-rocket"></i> Automated CI/CD Pipeline</h3>
+                <p>Engineered an automated software delivery lifecycle using GitHub Actions. Containerized a web portfolio using Docker and configured secure automated SSH deployment to an AWS EC2 cloud instance on every git push.</p>
+                <div class="project-links">
+                    <a href="https://github.com/haseeb-2005/devops-p1" target="_blank" class="btn-proj-action">
+                        <i class="fa-brands fa-github"></i> View Code
+                    </a>
+                    <a href="http://13.233.138.48" target="_blank" class="btn-proj-action outline">
+                        <i class="fa-solid fa-earth-americas"></i> Live Demo
+                    </a>
+                </div>
+            </div>
+
             <div class="project-card">
                 <h3><i class="fa-brands fa-docker"></i> Dockerized Node.js Web App</h3>
                 <p>Containerized a Node.js application using multi-stage Docker builds to optimize image sizes and enhance runtime security wrappers.</p>
-                <!-- NEW: Repo and Detail Links (Items 1 & 2 from 1000757571_2.jpg) -->
                 <div class="project-links">
                     <a href="https://github.com/haseeb-2005/docker-nodejs-app" target="_blank" class="btn-proj-action">
                         <i class="fa-brands fa-github"></i> View Code
@@ -89,11 +96,9 @@
                 </div>
             </div>
 
-            <!-- Project 2 -->
             <div class="project-card">
                 <h3><i class="fa-brands fa-aws"></i> AWS Static Website Hosting</h3>
                 <p>Hosted a secure, high-availability website using AWS S3 for storage and Amazon CloudFront as a CDN for low-latency global delivery.</p>
-                <!-- NEW: Repo and Detail Links -->
                 <div class="project-links">
                     <a href="https://github.com/haseeb-2005/aws-static-hosting" target="_blank" class="btn-proj-action">
                         <i class="fa-brands fa-github"></i> View Code
@@ -104,11 +109,9 @@
                 </div>
             </div>
 
-            <!-- Project 3 -->
             <div class="project-card">
                 <h3><i class="fa-brands fa-jenkins"></i> Jenkins CI/CD Pipeline</h3>
                 <p>Architected a complete automation pipeline that triggers on git commits, runs unit tests, builds artifacts, and deploys to target servers.</p>
-                <!-- NEW: Repo and Detail Links -->
                 <div class="project-links">
                     <a href="https://github.com/haseeb-2005/jenkins-cicd-pipeline" target="_blank" class="btn-proj-action">
                         <i class="fa-brands fa-github"></i> View Code
@@ -119,11 +122,9 @@
                 </div>
             </div>
 
-            <!-- Project 4 -->
             <div class="project-card">
                 <h3><i class="fa-solid fa-network-wired"></i> Kubernetes Deployment</h3>
                 <p>Orchestrated containerized applications using Minikube, managing scaling configurations, internal services, and deployment rollouts.</p>
-                <!-- NEW: Repo and Detail Links -->
                 <div class="project-links">
                     <a href="https://github.com/haseeb-2005/k8s-deployment" target="_blank" class="btn-proj-action">
                         <i class="fa-brands fa-github"></i> View Code
@@ -137,7 +138,6 @@
         </div>
     </section>
 
-    <!-- CERTIFICATIONS SECTION -->
     <section id="certifications">
         <h2>Certifications</h2>
         <div class="cert-grid">
@@ -179,7 +179,6 @@
         </div>
     </section>
 
-    <!-- CONTACT SECTION -->
     <section id="contact">
         <h2>Get In Touch</h2>
         <div class="contact-grid">
