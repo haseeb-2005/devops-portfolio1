@@ -1,19 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Haseeb | DevOps Portfolio</title>
+    <title>Haseeb | Cloud & DevOps Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
+<div class="space-stars-container">
+    <div class="stars-layer small-stars"></div>
+    <div class="stars-layer medium-stars"></div>
+    <div class="stars-layer large-stars"></div>
+</div>
+
 <header>
     <div class="header-container">
-        <img src="images/profile.jpeg" alt="Haseeb H Profile" class="profile-img">
+        <div class="profile-wrapper">
+            <img src="images/profile.jpeg" alt="Haseeb H Profile" class="profile-img">
+        </div>
         <h1>Haseeb H</h1>
-        <p class="subtitle">Aspiring DevOps Engineer</p>
+        <p class="subtitle"> Aspiring Cloud & DevOps Engineer</p>
         
         <div class="header-actions">
             <a href="pdf/haseeb-cv.pdf" download class="btn-resume">
@@ -37,21 +45,27 @@
         <a href="#certifications"><i class="fa-solid fa-certificate"></i> Certifications</a>
         <a href="#contact"><i class="fa-solid fa-envelope"></i> Contact</a>
     </div>
+
+    <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Theme">
+        <i class="fa-solid fa-moon"></i>
+    </button>
 </nav>
 
 <main class="container">
     <section id="about">
         <h2>About Me</h2>
         <p>
-            I am a Software Engineering Student & Aspiring DevOps Engineer with a passion for building scalable systems and automating workflows. Currently studying at Nehru College of Engineering and Research Centre, I focus on bridging the gap between code and infrastructure, specializing in Linux (Ubuntu) environments, cloud deployments, and containerization. 
+            I am a Software Engineering Student & Aspiring Cloud/DevOps Engineer with a passion for building scalable systems and automating workflows. Currently studying at Nehru College of Engineering and Research Centre, I focus on bridging the gap between code and infrastructure, specializing in Linux (Ubuntu) environments, secure cloud deployments, and containerization. 
         </p>
         <p>
-            My practical experience includes a dedicated DevOps Internship Program where I engineered hands-on infrastructure tasks, alongside designing automated pipelines like Dockerized Web Application Deployments on AWS EC2. I am driven to transform complex deployment workflows into seamless, reliable CI/CD pipelines.
+            My practical experience includes a dedicated DevOps Internship Program where I engineered hands-on infrastructure tasks, alongside designing automated pipelines like Dockerized Web Application Deployments on AWS EC2. I am driven to transform complex deployment workflows into seamless, reliable, and secure DevSecOps pipelines.
         </p>
     </section>
 
     <section id="skills">
-        <h2>Technical Skills</h2>
+        <h2>Technical & Professional Skills</h2>
+        
+        <h3>Cloud & DevSecOps Infrastructure</h3>
         <div class="skills-grid">
             <span class="skill-badge"><i class="fa-brands fa-linux"></i> Linux</span>
             <span class="skill-badge"><i class="fa-brands fa-git-alt"></i> Git & GitHub</span>
@@ -61,8 +75,23 @@
             <span class="skill-badge"><i class="fa-solid fa-network-wired"></i> Kubernetes</span>
             <span class="skill-badge"><i class="fa-brands fa-jenkins"></i> Jenkins</span>
             <span class="skill-badge"><i class="fa-solid fa-infinity"></i> CI/CD Pipelines</span>
-            <span class="skill-badge"><i class="fa-solid fa-cloud"></i> Cloud Computing</span>
+            <span class="skill-badge"><i class="fa-solid fa-shield-halved"></i> DevSecOps</span>
+            <span class="skill-badge"><i class="fa-solid fa-cloud-sun"></i> Cloud Architecture</span>
             <span class="skill-badge"><i class="fa-brands fa-ubuntu"></i> Ubuntu Server</span>
+        </div>
+
+        <h3 style="margin-top: 30px;">Programming & Languages</h3>
+        <div class="skills-grid">
+            <span class="skill-badge lang-html"><i class="fa-brands fa-html5"></i> HTML5</span>
+            <span class="skill-badge lang-python"><i class="fa-brands fa-python"></i> Python</span>
+            <span class="skill-badge lang-c"><i class="fa-solid fa-code"></i> C Programming</span>
+            <span class="skill-badge lang-java"><i class="fa-brands fa-java"></i> Java</span>
+        </div>
+
+        <h3 style="margin-top: 30px;">Productivity & Administration</h3>
+        <div class="skills-grid">
+            <span class="skill-badge productivity"><i class="fa-regular fa-file-word"></i> Microsoft Word</span>
+            <span class="skill-badge productivity"><i class="fa-regular fa-file-excel"></i> Microsoft Excel</span>
         </div>
     </section>
 
@@ -203,8 +232,26 @@
 </main>
 
 <footer>
-    <p>© 2026 Haseeb H | DevOps Portfolio Website</p>
+    <p>© 2026 Haseeb H | Cloud & DevOps Portfolio</p>
 </footer>
 
+<script>
+    const toggleBtn = document.getElementById('theme-toggle');
+    const htmlEl = document.documentElement;
+
+    toggleBtn.addEventListener('click', () => {
+        const currentTheme = htmlEl.getAttribute('data-theme');
+        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+        htmlEl.setAttribute('data-theme', newTheme);
+        
+        // Switch button icon
+        const icon = toggleBtn.querySelector('i');
+        if (newTheme === 'light') {
+            icon.className = 'fa-solid fa-sun';
+        } else {
+            icon.className = 'fa-solid fa-moon';
+        }
+    });
+</script>
 </body>
-</html> 
+</html>
