@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="dark">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,251 +8,274 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
 
-<div class="space-stars-container">
-    <div class="stars-layer small-stars"></div>
-    <div class="stars-layer medium-stars"></div>
-    <div class="stars-layer large-stars"></div>
-</div>
-
-<header>
-    <div class="header-container">
-        <div class="profile-wrapper">
-            <img src="images/profile.jpeg" alt="Haseeb H Profile" class="profile-img">
-        </div>
-        <h1>Haseeb H</h1>
-        <p class="subtitle"> Aspiring Cloud & DevOps Engineer</p>
-        
-        <div class="header-actions">
-            <a href="pdf/haseeb-cv.pdf" download class="btn-resume">
-                <i class="fa-solid fa-file-arrow-down"></i> Download Resume (PDF)
-            </a>
-        </div>
-    </div>
-</header>
-
-<nav>
-    <input type="checkbox" id="menu-toggle">
-    
-    <label for="menu-toggle" class="menu-icon">
-        <i class="fa-solid fa-bars"></i>
-    </label>
-
-    <div class="nav-links">
-        <a href="#about"><i class="fa-solid fa-user"></i> About</a>
-        <a href="#skills"><i class="fa-solid fa-code"></i> Skills</a>
-        <a href="#projects"><i class="fa-solid fa-layer-group"></i> Projects</a>
-        <a href="#certifications"><i class="fa-solid fa-certificate"></i> Certifications</a>
-        <a href="#contact"><i class="fa-solid fa-envelope"></i> Contact</a>
+    <div class="space-stars-container">
+        <div class="stars-layer small-stars"></div>
+        <div class="stars-layer medium-stars"></div>
+        <div class="stars-layer large-stars"></div>
     </div>
 
-    <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Theme">
-        <i class="fa-solid fa-moon"></i>
-    </button>
-</nav>
+    <header>
+        <div class="header-container">
+            <div class="profile-wrapper">
+                <img src="images/profile.jpeg" alt="Haseeb H Profile" class="profile-img">
+            </div>
+            <h1>Haseeb H</h1>
+            <p class="subtitle"> Aspiring Cloud & DevOps Engineer</p>
 
-<main class="container">
-    <section id="about">
-        <h2>About Me</h2>
-        <p>
-            I am a Software Engineering Student & Aspiring Cloud/DevOps Engineer with a passion for building scalable systems and automating workflows. Currently studying at Nehru College of Engineering and Research Centre, I focus on bridging the gap between code and infrastructure, specializing in Linux (Ubuntu) environments, secure cloud deployments, and containerization. 
-        </p>
-        <p>
-            My practical experience includes a dedicated DevOps Internship Program where I engineered hands-on infrastructure tasks, alongside designing automated pipelines like Dockerized Web Application Deployments on AWS EC2. I am driven to transform complex deployment workflows into seamless, reliable, and secure DevSecOps pipelines.
-        </p>
-    </section>
+            <div class="header-actions">
+                <a href="pdf/haseeb-cv.pdf" download class="btn-resume">
+                    <i class="fa-solid fa-file-arrow-down"></i> Download Resume (PDF)
+                </a>
+            </div>
+        </div>
+    </header>
 
-    <section id="skills">
-        <h2>Technical & Professional Skills</h2>
-        
-        <h3>Cloud & DevSecOps Infrastructure</h3>
-        <div class="skills-grid">
-            <span class="skill-badge"><i class="fa-brands fa-linux"></i> Linux</span>
-            <span class="skill-badge"><i class="fa-brands fa-git-alt"></i> Git & GitHub</span>
-            <span class="skill-badge"><i class="fa-brands fa-docker"></i> Docker</span>
-            <span class="skill-badge"><i class="fa-solid fa-gears"></i> GitHub Actions</span>
-            <span class="skill-badge"><i class="fa-brands fa-aws"></i> AWS (EC2, S3)</span>
-            <span class="skill-badge"><i class="fa-solid fa-network-wired"></i> Kubernetes</span>
-            <span class="skill-badge"><i class="fa-brands fa-jenkins"></i> Jenkins</span>
-            <span class="skill-badge"><i class="fa-solid fa-infinity"></i> CI/CD Pipelines</span>
-            <span class="skill-badge"><i class="fa-solid fa-shield-halved"></i> DevSecOps</span>
-            <span class="skill-badge"><i class="fa-solid fa-cloud-sun"></i> Cloud Architecture</span>
-            <span class="skill-badge"><i class="fa-brands fa-ubuntu"></i> Ubuntu Server</span>
+    <nav>
+        <input type="checkbox" id="menu-toggle">
+
+        <label for="menu-toggle" class="menu-icon">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+
+        <div class="nav-links">
+            <a href="#about"><i class="fa-solid fa-user"></i> About</a>
+            <a href="#skills"><i class="fa-solid fa-code"></i> Skills</a>
+            <a href="#projects"><i class="fa-solid fa-layer-group"></i> Projects</a>
+            <a href="#certifications"><i class="fa-solid fa-certificate"></i> Certifications</a>
+            <a href="#contact"><i class="fa-solid fa-envelope"></i> Contact</a>
         </div>
 
-        <h3 style="margin-top: 30px;">Programming & Languages</h3>
-        <div class="skills-grid">
-            <span class="skill-badge lang-html"><i class="fa-brands fa-html5"></i> HTML5</span>
-            <span class="skill-badge lang-python"><i class="fa-brands fa-python"></i> Python</span>
-            <span class="skill-badge lang-c"><i class="fa-solid fa-code"></i> C Programming</span>
-            <span class="skill-badge lang-java"><i class="fa-brands fa-java"></i> Java</span>
-        </div>
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Theme">
+            <i class="fa-solid fa-moon"></i>
+        </button>
+    </nav>
 
-        <h3 style="margin-top: 30px;">Productivity & Administration</h3>
-        <div class="skills-grid">
-            <span class="skill-badge productivity"><i class="fa-regular fa-file-word"></i> Microsoft Word</span>
-            <span class="skill-badge productivity"><i class="fa-regular fa-file-excel"></i> Microsoft Excel</span>
-        </div>
-    </section>
+    <main class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                I am a Software Engineering Student & Aspiring Cloud/DevOps Engineer with a passion for building
+                scalable systems and automating workflows. Currently studying at Nehru College of Engineering and
+                Research Centre, I focus on bridging the gap between code and infrastructure, specializing in Linux
+                (Ubuntu) environments, secure cloud deployments, and containerization.
+            </p>
+            <p>
+                My practical experience includes a dedicated DevOps Internship Program where I engineered hands-on
+                infrastructure tasks, alongside designing automated pipelines like Dockerized Web Application
+                Deployments on AWS EC2. I am driven to transform complex deployment workflows into seamless, reliable,
+                and secure DevSecOps pipelines.
+            </p>
+        </section>
 
-    <section id="projects">
-        <h2>Featured DevOps Projects</h2>
-        <div class="projects-grid">
-            
-            <div class="project-card">
-                <h3><i class="fa-solid fa-rocket"></i> Automated CI/CD Pipeline</h3>
-                <p>Engineered an automated software delivery lifecycle using GitHub Actions. Containerized a web portfolio using Docker and configured secure automated SSH deployment to an AWS EC2 cloud instance on every git push.</p>
-                <div class="project-links">
-                    <a href="https://github.com/haseeb-2005/devops-p1" target="_blank" class="btn-proj-action">
-                        <i class="fa-brands fa-github"></i> View Code
-                    </a>
-                    <a href="http://13.233.138.48" target="_blank" class="btn-proj-action outline">
-                        <i class="fa-solid fa-earth-americas"></i> Live Demo
-                    </a>
+        <section id="skills">
+            <h2>Technical & Professional Skills</h2>
+
+            <h3>Cloud & DevSecOps Infrastructure</h3>
+            <div class="skills-grid">
+                <span class="skill-badge"><i class="fa-brands fa-linux"></i> Linux</span>
+                <span class="skill-badge"><i class="fa-brands fa-git-alt"></i> Git & GitHub</span>
+                <span class="skill-badge"><i class="fa-brands fa-docker"></i> Docker</span>
+                <span class="skill-badge"><i class="fa-solid fa-gears"></i> GitHub Actions</span>
+                <span class="skill-badge"><i class="fa-brands fa-aws"></i> AWS (EC2, S3)</span>
+                <span class="skill-badge"><i class="fa-solid fa-network-wired"></i> Kubernetes</span>
+                <span class="skill-badge"><i class="fa-brands fa-jenkins"></i> Jenkins</span>
+                <span class="skill-badge"><i class="fa-solid fa-infinity"></i> CI/CD Pipelines</span>
+                <span class="skill-badge"><i class="fa-solid fa-shield-halved"></i> DevSecOps</span>
+                <span class="skill-badge"><i class="fa-solid fa-cloud-sun"></i> Cloud Architecture</span>
+                <span class="skill-badge"><i class="fa-brands fa-ubuntu"></i> Ubuntu Server</span>
+            </div>
+
+            <h3 style="margin-top: 30px;">Programming & Languages</h3>
+            <div class="skills-grid">
+                <span class="skill-badge lang-html"><i class="fa-brands fa-html5"></i> HTML5</span>
+                <span class="skill-badge lang-python"><i class="fa-brands fa-python"></i> Python</span>
+                <span class="skill-badge lang-c"><i class="fa-solid fa-code"></i> C Programming</span>
+                <span class="skill-badge lang-java"><i class="fa-brands fa-java"></i> Java</span>
+            </div>
+
+            <h3 style="margin-top: 30px;">Productivity & Administration</h3>
+            <div class="skills-grid">
+                <span class="skill-badge productivity"><i class="fa-regular fa-file-word"></i> Microsoft Word</span>
+                <span class="skill-badge productivity"><i class="fa-regular fa-file-excel"></i> Microsoft Excel</span>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Featured DevOps Projects</h2>
+            <div class="projects-grid">
+
+                <div class="project-card">
+                    <h3><i class="fa-solid fa-rocket"></i> Automated CI/CD Pipeline</h3>
+                    <p>Engineered an automated software delivery lifecycle using GitHub Actions. Containerized a web
+                        portfolio using Docker and configured secure automated SSH deployment to an AWS EC2 cloud
+                        instance on every git push.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/haseeb-2005/devops-p1" target="_blank" class="btn-proj-action">
+                            <i class="fa-brands fa-github"></i> View Code
+                        </a>
+                        <a href="http://13.233.138.48" target="_blank" class="btn-proj-action outline">
+                            <i class="fa-solid fa-earth-americas"></i> Live Demo
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3><i class="fa-brands fa-docker"></i> Dockerized Node.js Web App</h3>
+                    <p>Containerized a Node.js application using multi-stage Docker builds to optimize image sizes and
+                        enhance runtime security wrappers.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/haseeb-2005/docker-nodejs-app" target="_blank"
+                            class="btn-proj-action">
+                            <i class="fa-brands fa-github"></i> View Code
+                        </a>
+                        <a href="images/docker-architecture.png" target="_blank" class="btn-proj-action outline">
+                            <i class="fa-solid fa-diagram-project"></i> Architecture
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3><i class="fa-brands fa-aws"></i> AWS Static Website Hosting</h3>
+                    <p>Hosted a secure, high-availability website using AWS S3 for storage and Amazon CloudFront as a
+                        CDN for low-latency global delivery.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/haseeb-2005/aws-static-hosting" target="_blank"
+                            class="btn-proj-action">
+                            <i class="fa-brands fa-github"></i> View Code
+                        </a>
+                        <a href="images/aws-architecture.png" target="_blank" class="btn-proj-action outline">
+                            <i class="fa-solid fa-diagram-project"></i> Architecture
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3><i class="fa-brands fa-jenkins"></i> Jenkins CI/CD Pipeline</h3>
+                    <p>Architected a complete automation pipeline that triggers on git commits, runs unit tests, builds
+                        artifacts, and deploys to target servers.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/haseeb-2005/jenkins-cicd-pipeline" target="_blank"
+                            class="btn-proj-action">
+                            <i class="fa-brands fa-github"></i> View Code
+                        </a>
+                        <a href="images/jenkins-workflow.png" target="_blank" class="btn-proj-action outline">
+                            <i class="fa-solid fa-diagram-project"></i> Workflow
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3><i class="fa-solid fa-network-wired"></i> Kubernetes Deployment</h3>
+                    <p>Orchestrated containerized applications using Minikube, managing scaling configurations, internal
+                        services, and deployment rollouts.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/haseeb-2005/devops-p1" target="_blank" class="btn-proj-action">
+                            <i class="fa-brands fa-github"></i> View Code
+                        </a>
+                        <a href="images/kubr.png" target="_blank" class="btn-proj-action outline">
+                            <i class="fa-solid fa-diagram-project"></i> Architecture
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="certifications">
+            <h2>Certifications</h2>
+            <div class="cert-grid">
+                <div class="cert-card">
+                    <h4>MATLAB Training</h4>
+                    <p class="issuer">MathWorks</p>
+                    <a href="images/matlab.jpg.jpeg" target="_blank" class="cert-link">View Certificate <i
+                            class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+
+                <div class="cert-card">
+                    <h4>Advanced AI Program</h4>
+                    <p class="issuer">NxtWave</p>
+                    <a href="images/nxtwave.jpg.jpeg" target="_blank" class="cert-link">View Certificate <i
+                            class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+
+                <div class="cert-card">
+                    <h4>AI: Prompt Engineering</h4>
+                    <p class="issuer">Meta</p>
+                    <a href="images/prompt.jpeg" class="cert-link">View Certificate <i
+                            class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+
+                <div class="cert-card">
+                    <h4>AWS DevOps Training</h4>
+                    <p class="issuer">Amazon Web Services</p>
+                    <a href="images/aws.jpg.jpeg" target="_blank" class="cert-link">View Certificate <i
+                            class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+
+                <div class="cert-card">
+                    <h4>Devops-Professional</h4>
+                    <p class="issuer">INTERNSHIP</p>
+                    <a href="images/techcake.jpeg" target="_blank" class="cert-link">View Certificate <i
+                            class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+
+                <div class="cert-card">
+                    <h4>AWS-Agentic AI </h4>
+                    <p class="issuer">ICSET-9th EDITION</p>
+                    <a href="images/ict2.jpg.jpeg" class="cert-link">View Certificate <i
+                            class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
             </div>
+        </section>
 
-            <div class="project-card">
-                <h3><i class="fa-brands fa-docker"></i> Dockerized Node.js Web App</h3>
-                <p>Containerized a Node.js application using multi-stage Docker builds to optimize image sizes and enhance runtime security wrappers.</p>
-                <div class="project-links">
-                    <a href="https://github.com/haseeb-2005/docker-nodejs-app" target="_blank" class="btn-proj-action">
-                        <i class="fa-brands fa-github"></i> View Code
-                    </a>
-                    <a href="images/docker-architecture.png" target="_blank" class="btn-proj-action outline">
-                        <i class="fa-solid fa-diagram-project"></i> Architecture
-                    </a>
-                </div>
+        <section id="contact">
+            <h2>Get In Touch</h2>
+            <div class="contact-grid">
+                <a href="mailto:haseebofficial2005@gmail.com" class="contact-item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>haseebofficial2005@gmail.com</span>
+                </a>
+                <a href="https://github.com/haseeb-2005" target="_blank" class="contact-item">
+                    <i class="fa-brands fa-github"></i>
+                    <span>GitHub Profile</span>
+                </a>
+                <a href="https://www.linkedin.com/in/haseeb-h-900951349" target="_blank" class="contact-item">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <span>LinkedIn Profile</span>
+                </a>
+                <a href="https://wa.me/919947467579" target="_blank" class="contact-item contact-whatsapp">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <span>+91 99474 67579</span>
+                </a>
             </div>
+        </section>
+    </main>
 
-            <div class="project-card">
-                <h3><i class="fa-brands fa-aws"></i> AWS Static Website Hosting</h3>
-                <p>Hosted a secure, high-availability website using AWS S3 for storage and Amazon CloudFront as a CDN for low-latency global delivery.</p>
-                <div class="project-links">
-                    <a href="https://github.com/haseeb-2005/aws-static-hosting" target="_blank" class="btn-proj-action">
-                        <i class="fa-brands fa-github"></i> View Code
-                    </a>
-                    <a href="images/aws-architecture.png" target="_blank" class="btn-proj-action outline">
-                        <i class="fa-solid fa-diagram-project"></i> Architecture
-                    </a>
-                </div>
-            </div>
+    <footer>
+        <p>© 2026 Haseeb H | Cloud & DevOps Portfolio</p>
+    </footer>
 
-            <div class="project-card">
-                <h3><i class="fa-brands fa-jenkins"></i> Jenkins CI/CD Pipeline</h3>
-                <p>Architected a complete automation pipeline that triggers on git commits, runs unit tests, builds artifacts, and deploys to target servers.</p>
-                <div class="project-links">
-                    <a href="https://github.com/haseeb-2005/jenkins-cicd-pipeline" target="_blank" class="btn-proj-action">
-                        <i class="fa-brands fa-github"></i> View Code
-                    </a>
-                    <a href="images/jenkins-workflow.png" target="_blank" class="btn-proj-action outline">
-                        <i class="fa-solid fa-diagram-project"></i> Workflow
-                    </a>
-                </div>
-            </div>
+    <script>
+        const toggleBtn = document.getElementById('theme-toggle');
+        const htmlEl = document.documentElement;
 
-            <div class="project-card">
-                <h3><i class="fa-solid fa-network-wired"></i> Kubernetes Deployment</h3>
-                <p>Orchestrated containerized applications using Minikube, managing scaling configurations, internal services, and deployment rollouts.</p>
-                <div class="project-links">
-                    <a href="https://github.com/haseeb-2005/devops-p1" target="_blank" class="btn-proj-action">
-                        <i class="fa-brands fa-github"></i> View Code
-                    </a>
-                    <a href="images/kubr.png" target="_blank" class="btn-proj-action outline">
-                        <i class="fa-solid fa-diagram-project"></i> Architecture
-                    </a>
-                </div>
-            </div>
+        toggleBtn.addEventListener('click', () => {
+            const currentTheme = htmlEl.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            htmlEl.setAttribute('data-theme', newTheme);
 
-        </div>
-    </section>
-
-    <section id="certifications">
-        <h2>Certifications</h2>
-        <div class="cert-grid">
-            <div class="cert-card">
-                <h4>MATLAB Training</h4>
-                <p class="issuer">MathWorks</p>
-                <a href="images/matlab.jpg.jpeg" target="_blank" class="cert-link">View Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-            </div>
-
-            <div class="cert-card">
-                <h4>Advanced AI Program</h4>
-                <p class="issuer">NxtWave</p>
-                <a href="images/nxtwave.jpg.jpeg" target="_blank" class="cert-link">View Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-            </div>
-
-            <div class="cert-card">
-                <h4>AI: Prompt Engineering</h4>
-                <p class="issuer">Meta</p>
-                <a href="images/prompt.jpeg" class="cert-link">View Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-            </div>
-
-            <div class="cert-card">
-                <h4>AWS DevOps Training</h4>
-                <p class="issuer">Amazon Web Services</p>
-                <a href="images/aws.jpg.jpeg" target="_blank" class="cert-link">View Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-            </div>
-
-            <div class="cert-card">
-                <h4>Devops-Professional</h4>
-                <p class="issuer">INTERNSHIP</p>
-                <a href="images/techcake.jpeg" target="_blank" class="cert-link">View Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-            </div>
-
-            <div class="cert-card">
-                <h4>AWS-Agentic AI </h4>
-                <p class="issuer">ICSET-9th EDITION</p>
-                <a href="images/ict2.jpg.jpeg" class="cert-link">View Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact">
-        <h2>Get In Touch</h2>
-        <div class="contact-grid">
-            <a href="mailto:haseebofficial2005@gmail.com" class="contact-item">
-                <i class="fa-solid fa-envelope"></i>
-                <span>haseebofficial2005@gmail.com</span>
-            </a>
-            <a href="https://github.com/haseeb-2005" target="_blank" class="contact-item">
-                <i class="fa-brands fa-github"></i>
-                <span>GitHub Profile</span>
-            </a>
-            <a href="https://www.linkedin.com/in/haseeb-h-900951349" target="_blank" class="contact-item">
-                <i class="fa-brands fa-linkedin"></i>
-                <span>LinkedIn Profile</span>
-            </a>
-            <a href="https://wa.me/919947467579" target="_blank" class="contact-item contact-whatsapp">
-                <i class="fa-brands fa-whatsapp"></i>
-                <span>+91 99474 67579</span>
-            </a>
-        </div>
-    </section>
-</main>
-
-<footer>
-    <p>© 2026 Haseeb H | Cloud & DevOps Portfolio</p>
-</footer>
-
-<script>
-    const toggleBtn = document.getElementById('theme-toggle');
-    const htmlEl = document.documentElement;
-
-    toggleBtn.addEventListener('click', () => {
-        const currentTheme = htmlEl.getAttribute('data-theme');
-        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-        htmlEl.setAttribute('data-theme', newTheme);
-        
-        // Switch button icon
-        const icon = toggleBtn.querySelector('i');
-        if (newTheme === 'light') {
-            icon.className = 'fa-solid fa-sun';
-        } else {
-            icon.className = 'fa-solid fa-moon';
-        }
-    });
-</script>
+            // Switch button icon
+            const icon = toggleBtn.querySelector('i');
+            if (newTheme === 'light') {
+                icon.className = 'fa-solid fa-sun';
+            } else {
+                icon.className = 'fa-solid fa-moon';
+            }
+        });
+    </script>
 </body>
+
 </html>
