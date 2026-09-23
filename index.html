@@ -4,38 +4,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Haseeb | Cloud & DevOps Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Haseeb H | Cloud & DevOps Engineer — 3D Portfolio</title>
+    <meta name="description" content="Haseeb H — Aspiring Cloud & DevOps Engineer. Explore my interactive 3D portfolio featuring CI/CD pipelines, Docker, Kubernetes, AWS, and live project demos.">
+
+    <!-- Fonts & Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <!-- Three.js Particle Canvas -->
+    <canvas id="particle-canvas"></canvas>
 
-    <div class="space-stars-container">
-        <div class="stars-layer small-stars"></div>
-        <div class="stars-layer medium-stars"></div>
-        <div class="stars-layer large-stars"></div>
+    <!-- Mouse Follower Glow -->
+    <div class="cursor-glow"></div>
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress">
+        <div class="scroll-progress-bar"></div>
     </div>
 
-    <header>
-        <div class="header-container">
-            <div class="profile-wrapper">
-                <img src="images/profile.jpeg" alt="Haseeb H Profile" class="profile-img">
-            </div>
-            <h1>Haseeb H</h1>
-            <p class="subtitle"> Aspiring Cloud & DevOps Engineer</p>
-
-            <div class="header-actions">
-                <a href="pdf/haseeb-cv.pdf" download class="btn-resume">
-                    <i class="fa-solid fa-file-arrow-down"></i> Download Resume (PDF)
-                </a>
-            </div>
-        </div>
-    </header>
-
+    <!-- ==================== NAVIGATION ==================== -->
     <nav>
-        <input type="checkbox" id="menu-toggle">
+        <a href="#" class="nav-brand">&lt;<span>Haseeb</span>/&gt;</a>
 
+        <input type="checkbox" id="menu-toggle">
         <label for="menu-toggle" class="menu-icon">
             <i class="fa-solid fa-bars"></i>
         </label>
@@ -44,234 +37,844 @@
             <a href="#about"><i class="fa-solid fa-user"></i> About</a>
             <a href="#skills"><i class="fa-solid fa-code"></i> Skills</a>
             <a href="#projects"><i class="fa-solid fa-layer-group"></i> Projects</a>
-            <a href="#certifications"><i class="fa-solid fa-certificate"></i> Certifications</a>
+            <a href="#certifications"><i class="fa-solid fa-certificate"></i> Certs</a>
             <a href="#contact"><i class="fa-solid fa-envelope"></i> Contact</a>
         </div>
 
-        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Theme">
-            <i class="fa-solid fa-moon"></i>
-        </button>
+        <div class="nav-right">
+            <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Theme">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+        </div>
     </nav>
 
+    <!-- ==================== HERO SECTION ==================== -->
+    <header class="hero" id="hero">
+        <div class="hero-content">
+            <div class="profile-wrapper">
+                <img src="images/profile.jpeg" alt="Haseeb H" class="profile-img">
+            </div>
+            <h1>Haseeb H</h1>
+            <div class="typed-wrapper">
+                <span id="typed-text"></span>
+            </div>
+            <p class="hero-description">
+                Building scalable cloud infrastructure & automating deployment pipelines.
+                Bridging the gap between code and production with DevOps excellence.
+            </p>
+            <div class="hero-actions">
+                <a href="pdf/haseeb-cv.pdf" download class="btn-primary">
+                    <i class="fa-solid fa-file-arrow-down"></i> Download Resume
+                </a>
+                <a href="#projects" class="btn-secondary">
+                    <i class="fa-solid fa-rocket"></i> View Projects
+                </a>
+            </div>
+        </div>
+
+        <!-- Floating Geometric Shapes -->
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="shape shape-4"></div>
+            <div class="shape shape-5"></div>
+        </div>
+    </header>
+
+    <!-- ==================== STATS COUNTER ==================== -->
+    <section class="stats-section">
+        <div class="stats-grid reveal">
+            <div class="stat-card">
+                <div class="stat-number"><span class="counter" data-target="9">0</span>+</div>
+                <div class="stat-label">Projects Built</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number"><span class="counter" data-target="15">0</span>+</div>
+                <div class="stat-label">Technologies</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number"><span class="counter" data-target="6">0</span></div>
+                <div class="stat-label">Certifications</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number"><span class="counter" data-target="1">0</span>+</div>
+                <div class="stat-label">Years Learning</div>
+            </div>
+        </div>
+    </section>
+
     <main class="container">
+
+        <!-- ==================== ABOUT ==================== -->
         <section id="about">
-            <h2>About Me</h2>
-            <p>
-                I am a Software Engineering Student & Aspiring Cloud/DevOps Engineer with a passion for building
-                scalable systems and automating workflows. Currently studying at Nehru College of Engineering and
-                Research Centre, I focus on bridging the gap between code and infrastructure, specializing in Linux
-                (Ubuntu) environments, secure cloud deployments, and containerization.
-            </p>
-            <p>
-                My practical experience includes a dedicated DevOps Internship Program where I engineered hands-on
-                infrastructure tasks, alongside designing automated pipelines like Dockerized Web Application
-                Deployments on AWS EC2. I am driven to transform complex deployment workflows into seamless, reliable,
-                and secure DevSecOps pipelines.
-            </p>
+            <div class="section-header reveal">
+                <h2>About <span class="gradient-text">Me</span></h2>
+                <p>Passionate about cloud infrastructure and DevOps automation</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text reveal">
+                    <p>
+                        I am a Software Engineering Student & Aspiring Cloud/DevOps Engineer with a passion for building
+                        scalable systems and automating workflows. Currently studying at Nehru College of Engineering and
+                        Research Centre, I focus on bridging the gap between code and infrastructure.
+                    </p>
+                    <p>
+                        Specializing in Linux (Ubuntu) environments, secure cloud deployments, and containerization, I
+                        transform complex deployment workflows into seamless, reliable, and secure DevSecOps pipelines.
+                    </p>
+                    <p>
+                        My practical experience includes a dedicated DevOps Internship Program where I engineered
+                        hands-on infrastructure tasks, alongside designing automated pipelines like Dockerized Web
+                        Application Deployments on AWS EC2.
+                    </p>
+                </div>
+                <div class="about-timeline reveal reveal-delay-2">
+                    <div class="timeline-item">
+                        <div class="year">2024 — Present</div>
+                        <h4>B.Tech Software Engineering</h4>
+                        <p>Nehru College of Engineering & Research Centre</p>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="year">2025</div>
+                        <h4>DevOps Internship</h4>
+                        <p>Hands-on infrastructure & CI/CD pipeline engineering</p>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="year">2025</div>
+                        <h4>AWS & Cloud Certifications</h4>
+                        <p>Cloud architecture, DevOps training & AI programs</p>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="year">2026</div>
+                        <h4>Building & Shipping</h4>
+                        <p>Open-source projects, portfolio, and real-world deployments</p>
+                    </div>
+                </div>
+            </div>
         </section>
 
+        <!-- ==================== SKILLS ==================== -->
         <section id="skills">
-            <h2>Technical & Professional Skills</h2>
-
-            <h3>Cloud & DevSecOps Infrastructure</h3>
-            <div class="skills-grid">
-                <span class="skill-badge"><i class="fa-brands fa-linux"></i> Linux</span>
-                <span class="skill-badge"><i class="fa-brands fa-git-alt"></i> Git & GitHub</span>
-                <span class="skill-badge"><i class="fa-brands fa-docker"></i> Docker</span>
-                <span class="skill-badge"><i class="fa-solid fa-gears"></i> GitHub Actions</span>
-                <span class="skill-badge"><i class="fa-brands fa-aws"></i> AWS (EC2, S3)</span>
-                <span class="skill-badge"><i class="fa-solid fa-network-wired"></i> Kubernetes</span>
-                <span class="skill-badge"><i class="fa-brands fa-jenkins"></i> Jenkins</span>
-                <span class="skill-badge"><i class="fa-solid fa-infinity"></i> CI/CD Pipelines</span>
-                <span class="skill-badge"><i class="fa-solid fa-shield-halved"></i> DevSecOps</span>
-                <span class="skill-badge"><i class="fa-solid fa-cloud-sun"></i> Cloud Architecture</span>
-                <span class="skill-badge"><i class="fa-brands fa-ubuntu"></i> Ubuntu Server</span>
+            <div class="section-header reveal">
+                <h2>Technical <span class="gradient-text">Skills</span></h2>
+                <p>Tools and technologies I work with every day</p>
             </div>
 
-            <h3 style="margin-top: 30px;">Programming & Languages</h3>
-            <div class="skills-grid">
-                <span class="skill-badge lang-html"><i class="fa-brands fa-html5"></i> HTML5</span>
-                <span class="skill-badge lang-python"><i class="fa-brands fa-python"></i> Python</span>
-                <span class="skill-badge lang-c"><i class="fa-solid fa-code"></i> C Programming</span>
-                <span class="skill-badge lang-java"><i class="fa-brands fa-java"></i> Java</span>
+            <div class="skill-tabs reveal">
+                <button class="skill-tab active" data-tab="skills-devops">Cloud & DevOps</button>
+                <button class="skill-tab" data-tab="skills-langs">Programming</button>
+                <button class="skill-tab" data-tab="skills-tools">Tools & Platforms</button>
             </div>
 
-            <h3 style="margin-top: 30px;">Productivity & Administration</h3>
-            <div class="skills-grid">
-                <span class="skill-badge productivity"><i class="fa-regular fa-file-word"></i> Microsoft Word</span>
-                <span class="skill-badge productivity"><i class="fa-regular fa-file-excel"></i> Microsoft Excel</span>
+            <div class="skills-container reveal">
+                <!-- Cloud & DevOps -->
+                <div class="skill-group active" id="skills-devops">
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fa-brands fa-linux"></i></div>
+                        <h4>Linux</h4>
+                        <div class="skill-progress">
+                            <div class="skill-progress-bar"><div class="skill-progress-fill" data-width="90%"></div></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fa-brands fa-docker"></i></div>
+                        <h4>Docker</h4>
+                        <div class="skill-progress">
+                            <div class="skill-progress-bar"><div class="skill-progress-fill" data-width="85%"></div></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fa-solid fa-network-wired"></i></div>
+                        <h4>Kubernetes</h4>
+                        <div class="skill-progress">
+                            <div class="skill-progress-bar"><div class="skill-progress-fill" data-width="70%"></div></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fa-brands fa-aws"></i></div>
+                        <h4>AWS</h4>
+                        <div class="skill-progress">
+                            <div class="skill-progress-bar"><div class="skill-progress-fill" data-width="80%"></div></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fa-brands fa-jenkins"></i></div>
+                        <h4>Jenkins</h4>
+                        <div class="skill-progress">
+                            <div class="skill-progress-bar"><div class="skill-progress-fill" data-width="75%"></div></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fa-solid fa-infinity"></i></div>
+                        <h4>CI/CD</h4>
+                        <div class="skill-progress">
+                            <div class="skill-progress-bar"><div class="skill-progress-fill" data-width="85%"></div></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fa-brands fa-git-alt"></i></div>
+                        <h4>Git & GitHub</h4>
+                        <div class="skill-progress">
+                            <div class="skill-progress-bar"><div class="skill-progress-fill" data-width="90%"></div></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                        <h4>DevSecOps</h4>
+                        <div class="skill-progress">
+                            <div class="skill-progress-bar"><div class="skill-progress-fill" data-width="65%"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Programming -->
+                <div class="skill-group" id="skills-langs">
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fa-brands fa-python"></i></div>
+                        <h4>Python</h4>
+                        <div class="skill-progress">
+                            <div class="skill-progress-bar"><div class="skill-progress-fill" data-width="80%"></div></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fa-brands fa-html5"></i></div>
+                        <h4>HTML5 / CSS3</h4>
+                        <div class="skill-progress">
+                            <div class="skill-progress-bar"><div class="skill-progress-fill" data-width="85%"></div></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fa-brands fa-js"></i></div>
+                        <h4>JavaScript</h4>
+                        <div class="skill-progress">
+                            <div class="skill-progress-bar"><div class="skill-progress-fill" data-width="70%"></div></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fa-solid fa-code"></i></div>
+                        <h4>C Programming</h4>
+                        <div class="skill-progress">
+                            <div class="skill-progress-bar"><div class="skill-progress-fill" data-width="65%"></div></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fa-brands fa-java"></i></div>
+                        <h4>Java</h4>
+                        <div class="skill-progress">
+                            <div class="skill-progress-bar"><div class="skill-progress-fill" data-width="60%"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tools & Platforms -->
+                <div class="skill-group" id="skills-tools">
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fa-solid fa-gears"></i></div>
+                        <h4>GitHub Actions</h4>
+                        <div class="skill-progress">
+                            <div class="skill-progress-bar"><div class="skill-progress-fill" data-width="85%"></div></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fa-brands fa-ubuntu"></i></div>
+                        <h4>Ubuntu Server</h4>
+                        <div class="skill-progress">
+                            <div class="skill-progress-bar"><div class="skill-progress-fill" data-width="90%"></div></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fa-solid fa-cloud-sun"></i></div>
+                        <h4>Cloud Architecture</h4>
+                        <div class="skill-progress">
+                            <div class="skill-progress-bar"><div class="skill-progress-fill" data-width="70%"></div></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fa-solid fa-terminal"></i></div>
+                        <h4>Bash Scripting</h4>
+                        <div class="skill-progress">
+                            <div class="skill-progress-bar"><div class="skill-progress-fill" data-width="80%"></div></div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
+        <!-- ==================== PROJECTS ==================== -->
         <section id="projects">
-            <h2>Featured DevOps Projects</h2>
+            <div class="section-header reveal">
+                <h2>Featured <span class="gradient-text">Projects</span></h2>
+                <p>Real-world DevOps projects with live interactive demos</p>
+            </div>
+
             <div class="projects-grid">
 
-                <div class="project-card">
-                    <h3><i class="fa-solid fa-rocket"></i> Automated CI/CD Pipeline</h3>
-                    <p>Engineered an automated software delivery lifecycle using GitHub Actions. Containerized a web
-                        portfolio using Docker and configured secure automated SSH deployment to an AWS EC2 cloud
-                        instance on every git push.</p>
-                    <div class="project-links">
-                        <a href="https://github.com/haseeb-2005/devops-p1" target="_blank" class="btn-proj-action">
-                            <i class="fa-brands fa-github"></i> View Code
-                        </a>
-                        <a href="images/cicd-architecture.png" target="_blank" class="btn-proj-action outline"><i class="fa-solid fa-diagram-project"></i> Architecture</a>
+                <!-- PROJECT 1: CI/CD Pipeline -->
+                <div class="project-card reveal">
+                    <div class="project-card-header">
+                        <div class="project-bg project-bg-1"></div>
+                        <i class="fa-solid fa-rocket project-icon-large"></i>
+                    </div>
+                    <div class="project-card-body">
+                        <h3>Automated CI/CD Pipeline <span class="project-tag">DevOps</span></h3>
+                        <p>Engineered an automated software delivery lifecycle using GitHub Actions. Containerized a web portfolio using Docker and configured secure automated SSH deployment to an AWS EC2 instance on every git push.</p>
+                        <div class="project-tech">
+                            <span class="tech-badge">GitHub Actions</span>
+                            <span class="tech-badge">Docker</span>
+                            <span class="tech-badge">AWS EC2</span>
+                            <span class="tech-badge">SSH</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/haseeb-2005/devops-p1" target="_blank" class="btn-project primary">
+                                <i class="fa-brands fa-github"></i> Code
+                            </a>
+                            <a href="images/cicd-architecture.png" target="_blank" class="btn-project outline">
+                                <i class="fa-solid fa-diagram-project"></i> Architecture
+                            </a>
+                        </div>
                     </div>
                 </div>
 
-                <div class="project-card">
-                    <h3><i class="fa-brands fa-docker"></i> Dockerized Node.js Web App</h3>
-                    <p>Containerized a Node.js application using multi-stage Docker builds to optimize image sizes and
-                        enhance runtime security wrappers.</p>
-                    <div class="project-links">
-                        <a href="https://github.com/haseeb-2005/docker-nodejs-app" target="_blank"
-                            class="btn-proj-action">
-                            <i class="fa-brands fa-github"></i> View Code
-                        </a>
-                        <a href="images/docker-architecture.png" target="_blank" class="btn-proj-action outline">
-                            <i class="fa-solid fa-diagram-project"></i> Architecture
-                        </a>
+                <!-- PROJECT 2: Dockerized Node.js -->
+                <div class="project-card reveal reveal-delay-1">
+                    <div class="project-card-header">
+                        <div class="project-bg project-bg-2"></div>
+                        <i class="fa-brands fa-docker project-icon-large"></i>
+                    </div>
+                    <div class="project-card-body">
+                        <h3>Dockerized Node.js App <span class="project-tag">Container</span></h3>
+                        <p>Containerized a Node.js application using multi-stage Docker builds to optimize image sizes and enhance runtime security wrappers for production deployment.</p>
+                        <div class="project-tech">
+                            <span class="tech-badge">Docker</span>
+                            <span class="tech-badge">Node.js</span>
+                            <span class="tech-badge">Multi-stage Build</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/haseeb-2005/docker-nodejs-app" target="_blank" class="btn-project primary">
+                                <i class="fa-brands fa-github"></i> Code
+                            </a>
+                            <a href="images/docker-architecture.png" target="_blank" class="btn-project outline">
+                                <i class="fa-solid fa-diagram-project"></i> Architecture
+                            </a>
+                        </div>
                     </div>
                 </div>
 
-                <div class="project-card">
-                    <h3><i class="fa-brands fa-aws"></i> AWS Static Website Hosting</h3>
-                    <p>Hosted a secure, high-availability website using AWS S3 for storage and Amazon CloudFront as a
-                        CDN for low-latency global delivery.</p>
-                    <div class="project-links">
-                        <a href="https://github.com/haseeb-2005/aws-static-hosting" target="_blank"
-                            class="btn-proj-action">
-                            <i class="fa-brands fa-github"></i> View Code
-                        </a>
-                        <a href="images/aws-architecture.png" target="_blank" class="btn-proj-action outline">
-                            <i class="fa-solid fa-diagram-project"></i> Architecture
-                        </a>
+                <!-- PROJECT 3: AWS Static Hosting -->
+                <div class="project-card reveal reveal-delay-2">
+                    <div class="project-card-header">
+                        <div class="project-bg project-bg-3"></div>
+                        <i class="fa-brands fa-aws project-icon-large"></i>
+                    </div>
+                    <div class="project-card-body">
+                        <h3>AWS Static Website <span class="project-tag">Cloud</span></h3>
+                        <p>Hosted a secure, high-availability website using AWS S3 for storage and Amazon CloudFront as a CDN for low-latency global delivery with SSL.</p>
+                        <div class="project-tech">
+                            <span class="tech-badge">AWS S3</span>
+                            <span class="tech-badge">CloudFront</span>
+                            <span class="tech-badge">Route 53</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/haseeb-2005/aws-static-hosting" target="_blank" class="btn-project primary">
+                                <i class="fa-brands fa-github"></i> Code
+                            </a>
+                            <a href="images/aws-architecture.png" target="_blank" class="btn-project outline">
+                                <i class="fa-solid fa-diagram-project"></i> Architecture
+                            </a>
+                        </div>
                     </div>
                 </div>
 
-                <div class="project-card">
-                    <h3><i class="fa-brands fa-jenkins"></i> Jenkins CI/CD Pipeline</h3>
-                    <p>Architected a complete automation pipeline that triggers on git commits, runs unit tests, builds
-                        artifacts, and deploys to target servers.</p>
-                    <div class="project-links">
-                        <a href="https://github.com/haseeb-2005/jenkins-cicd-pipeline" target="_blank"
-                            class="btn-proj-action">
-                            <i class="fa-brands fa-github"></i> View Code
-                        </a>
-                        <a href="images/jenkins-workflow.png" target="_blank" class="btn-proj-action outline">
-                            <i class="fa-solid fa-diagram-project"></i> Workflow
-                        </a>
+                <!-- PROJECT 4: Jenkins Pipeline -->
+                <div class="project-card reveal">
+                    <div class="project-card-header">
+                        <div class="project-bg project-bg-4"></div>
+                        <i class="fa-brands fa-jenkins project-icon-large"></i>
+                    </div>
+                    <div class="project-card-body">
+                        <h3>Jenkins CI/CD Pipeline <span class="project-tag">Automation</span></h3>
+                        <p>Architected a complete automation pipeline that triggers on git commits, runs unit tests, builds artifacts, and deploys to target servers automatically.</p>
+                        <div class="project-tech">
+                            <span class="tech-badge">Jenkins</span>
+                            <span class="tech-badge">Groovy</span>
+                            <span class="tech-badge">Docker</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/haseeb-2005/jenkins-cicd-pipeline" target="_blank" class="btn-project primary">
+                                <i class="fa-brands fa-github"></i> Code
+                            </a>
+                            <a href="images/jenkins-workflow.png" target="_blank" class="btn-project outline">
+                                <i class="fa-solid fa-diagram-project"></i> Workflow
+                            </a>
+                        </div>
                     </div>
                 </div>
 
-                <div class="project-card">
-                    <h3><i class="fa-solid fa-network-wired"></i> Kubernetes Deployment</h3>
-                    <p>Orchestrated containerized applications using Minikube, managing scaling configurations, internal
-                        services, and deployment rollouts.</p>
-                    <div class="project-links">
-                        <a href="https://github.com/haseeb-2005/devops-p1" target="_blank" class="btn-proj-action">
-                            <i class="fa-brands fa-github"></i> View Code
-                        </a>
-                        <a href="images/kubernetes-architecture.png" target="_blank" class="btn-proj-action outline"><i class="fa-solid fa-diagram-project"></i> Architecture</a>
+                <!-- PROJECT 5: Kubernetes -->
+                <div class="project-card reveal reveal-delay-1">
+                    <div class="project-card-header">
+                        <div class="project-bg project-bg-5"></div>
+                        <i class="fa-solid fa-network-wired project-icon-large"></i>
+                    </div>
+                    <div class="project-card-body">
+                        <h3>Kubernetes Deployment <span class="project-tag">Orchestration</span></h3>
+                        <p>Orchestrated containerized applications using Minikube, managing scaling configurations, internal services, and deployment rollouts with kubectl.</p>
+                        <div class="project-tech">
+                            <span class="tech-badge">Kubernetes</span>
+                            <span class="tech-badge">Minikube</span>
+                            <span class="tech-badge">kubectl</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/haseeb-2005/devops-p1" target="_blank" class="btn-project primary">
+                                <i class="fa-brands fa-github"></i> Code
+                            </a>
+                            <a href="images/kubernetes-architecture.png" target="_blank" class="btn-project outline">
+                                <i class="fa-solid fa-diagram-project"></i> Architecture
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ======= NEW INTERACTIVE PROJECTS ======= -->
+
+                <!-- PROJECT 6: DevOps Dashboard Monitor (INTERACTIVE) -->
+                <div class="project-card reveal reveal-delay-2">
+                    <div class="project-card-header">
+                        <div class="project-bg project-bg-6"></div>
+                        <i class="fa-solid fa-chart-line project-icon-large"></i>
+                    </div>
+                    <div class="project-card-body">
+                        <h3>DevOps Dashboard <span class="project-tag interactive">Interactive</span></h3>
+                        <p>Real-time server monitoring dashboard with live CPU, memory, and network metrics. Features animated Chart.js visualizations updating every second.</p>
+                        <div class="project-tech">
+                            <span class="tech-badge">Chart.js</span>
+                            <span class="tech-badge">Real-time</span>
+                            <span class="tech-badge">Monitoring</span>
+                        </div>
+                        <div class="project-links">
+                            <button class="btn-project demo" onclick="openDemo('demo-dashboard')">
+                                <i class="fa-solid fa-play"></i> Live Demo
+                            </button>
+                            <a href="https://github.com/haseeb-2005" target="_blank" class="btn-project outline">
+                                <i class="fa-brands fa-github"></i> Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROJECT 7: Container Visualizer (INTERACTIVE) -->
+                <div class="project-card reveal">
+                    <div class="project-card-header">
+                        <div class="project-bg project-bg-7"></div>
+                        <i class="fa-brands fa-docker project-icon-large"></i>
+                    </div>
+                    <div class="project-card-body">
+                        <h3>Container Visualizer <span class="project-tag interactive">Interactive</span></h3>
+                        <p>Interactive Docker container orchestration visualizer. Watch containers spin up, connect, and load balance in real-time with terminal output.</p>
+                        <div class="project-tech">
+                            <span class="tech-badge">Docker</span>
+                            <span class="tech-badge">Visualization</span>
+                            <span class="tech-badge">Orchestration</span>
+                        </div>
+                        <div class="project-links">
+                            <button class="btn-project demo" onclick="openDemo('demo-containers')">
+                                <i class="fa-solid fa-play"></i> Live Demo
+                            </button>
+                            <a href="https://github.com/haseeb-2005" target="_blank" class="btn-project outline">
+                                <i class="fa-brands fa-github"></i> Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROJECT 8: CI/CD Pipeline Simulator (INTERACTIVE) -->
+                <div class="project-card reveal reveal-delay-1">
+                    <div class="project-card-header">
+                        <div class="project-bg project-bg-8"></div>
+                        <i class="fa-solid fa-arrow-right-arrow-left project-icon-large"></i>
+                    </div>
+                    <div class="project-card-body">
+                        <h3>Pipeline Simulator <span class="project-tag interactive">Interactive</span></h3>
+                        <p>Animated CI/CD pipeline simulator showing Code → Build → Test → Deploy stages with real-time progress indicators and status tracking.</p>
+                        <div class="project-tech">
+                            <span class="tech-badge">CI/CD</span>
+                            <span class="tech-badge">Simulation</span>
+                            <span class="tech-badge">Animation</span>
+                        </div>
+                        <div class="project-links">
+                            <button class="btn-project demo" onclick="openDemo('demo-pipeline')">
+                                <i class="fa-solid fa-play"></i> Live Demo
+                            </button>
+                            <a href="https://github.com/haseeb-2005" target="_blank" class="btn-project outline">
+                                <i class="fa-brands fa-github"></i> Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROJECT 9: Cloud Architecture Explorer (INTERACTIVE) -->
+                <div class="project-card reveal reveal-delay-2">
+                    <div class="project-card-header">
+                        <div class="project-bg project-bg-9"></div>
+                        <i class="fa-solid fa-cloud project-icon-large"></i>
+                    </div>
+                    <div class="project-card-body">
+                        <h3>Architecture Explorer <span class="project-tag interactive">Interactive</span></h3>
+                        <p>Interactive AWS cloud architecture diagram. Click on services to explore their connections, purpose, and how they form a production-ready infrastructure.</p>
+                        <div class="project-tech">
+                            <span class="tech-badge">AWS</span>
+                            <span class="tech-badge">Architecture</span>
+                            <span class="tech-badge">Interactive</span>
+                        </div>
+                        <div class="project-links">
+                            <button class="btn-project demo" onclick="openDemo('demo-architecture')">
+                                <i class="fa-solid fa-play"></i> Live Demo
+                            </button>
+                            <a href="https://github.com/haseeb-2005" target="_blank" class="btn-project outline">
+                                <i class="fa-brands fa-github"></i> Code
+                            </a>
+                        </div>
                     </div>
                 </div>
 
             </div>
         </section>
 
+        <!-- ==================== CERTIFICATIONS ==================== -->
         <section id="certifications">
-            <h2>Certifications</h2>
+            <div class="section-header reveal">
+                <h2>My <span class="gradient-text">Certifications</span></h2>
+                <p>Professional training and validated credentials</p>
+            </div>
             <div class="cert-grid">
-                <div class="cert-card">
+                <div class="cert-card reveal">
+                    <i class="fa-solid fa-award cert-icon"></i>
                     <h4>MATLAB Training</h4>
                     <p class="issuer">MathWorks</p>
-                    <a href="images/matlab.jpg.jpeg" target="_blank" class="cert-link">View Certificate <i
-                            class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <a href="images/matlab.jpg.jpeg" target="_blank" class="cert-link">View Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
-
-                <div class="cert-card">
+                <div class="cert-card reveal reveal-delay-1">
+                    <i class="fa-solid fa-brain cert-icon"></i>
                     <h4>Advanced AI Program</h4>
                     <p class="issuer">NxtWave</p>
-                    <a href="images/nxtwave.jpg.jpeg" target="_blank" class="cert-link">View Certificate <i
-                            class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <a href="images/nxtwave.jpg.jpeg" target="_blank" class="cert-link">View Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
-
-                <div class="cert-card">
+                <div class="cert-card reveal reveal-delay-2">
+                    <i class="fa-solid fa-robot cert-icon"></i>
                     <h4>AI: Prompt Engineering</h4>
                     <p class="issuer">Meta</p>
-                    <a href="images/prompt.jpeg" class="cert-link">View Certificate <i
-                            class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <a href="images/prompt.jpeg" target="_blank" class="cert-link">View Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
-
-                <div class="cert-card">
+                <div class="cert-card reveal">
+                    <i class="fa-brands fa-aws cert-icon"></i>
                     <h4>AWS DevOps Training</h4>
                     <p class="issuer">Amazon Web Services</p>
-                    <a href="images/aws.jpg.jpeg" target="_blank" class="cert-link">View Certificate <i
-                            class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <a href="images/aws.jpg.jpeg" target="_blank" class="cert-link">View Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
-
-                <div class="cert-card">
-                    <h4>Devops-Professional</h4>
-                    <p class="issuer">INTERNSHIP</p>
-                    <a href="images/techcake.jpeg" target="_blank" class="cert-link">View Certificate <i
-                            class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                <div class="cert-card reveal reveal-delay-1">
+                    <i class="fa-solid fa-briefcase cert-icon"></i>
+                    <h4>DevOps Professional</h4>
+                    <p class="issuer">Internship</p>
+                    <a href="images/techcake.jpeg" target="_blank" class="cert-link">View Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
-
-                <div class="cert-card">
-                    <h4>AWS-Agentic AI </h4>
-                    <p class="issuer">ICSET-9th EDITION</p>
-                    <a href="images/ict2.jpg.jpeg" class="cert-link">View Certificate <i
-                            class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                <div class="cert-card reveal reveal-delay-2">
+                    <i class="fa-solid fa-microchip cert-icon"></i>
+                    <h4>AWS-Agentic AI</h4>
+                    <p class="issuer">ICSET — 9th Edition</p>
+                    <a href="images/ict2.jpg.jpeg" target="_blank" class="cert-link">View Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
             </div>
         </section>
 
+        <!-- ==================== CONTACT ==================== -->
         <section id="contact">
-            <h2>Get In Touch</h2>
-            <div class="contact-grid">
-                <a href="mailto:haseebofficial2005@gmail.com" class="contact-item">
-                    <i class="fa-solid fa-envelope"></i>
-                    <span>haseebofficial2005@gmail.com</span>
-                </a>
-                <a href="https://github.com/haseeb-2005" target="_blank" class="contact-item">
-                    <i class="fa-brands fa-github"></i>
-                    <span>GitHub Profile</span>
-                </a>
-                <a href="https://www.linkedin.com/in/haseeb-h-900951349" target="_blank" class="contact-item">
-                    <i class="fa-brands fa-linkedin"></i>
-                    <span>LinkedIn Profile</span>
-                </a>
-                <a href="https://wa.me/919947467579" target="_blank" class="contact-item contact-whatsapp">
-                    <i class="fa-brands fa-whatsapp"></i>
-                    <span>+91 99474 67579</span>
-                </a>
+            <div class="section-header reveal">
+                <h2>Get In <span class="gradient-text">Touch</span></h2>
+                <p>Let's connect and build something great together</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-grid reveal">
+                    <a href="mailto:haseebofficial2005@gmail.com" class="contact-card">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>haseebofficial2005@gmail.com</span>
+                    </a>
+                    <a href="https://github.com/haseeb-2005" target="_blank" class="contact-card">
+                        <i class="fa-brands fa-github"></i>
+                        <span>GitHub Profile</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/haseeb-h-900951349" target="_blank" class="contact-card">
+                        <i class="fa-brands fa-linkedin"></i>
+                        <span>LinkedIn Profile</span>
+                    </a>
+                    <a href="https://wa.me/919947467579" target="_blank" class="contact-card whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <span>+91 99474 67579</span>
+                    </a>
+                </div>
             </div>
         </section>
     </main>
 
+    <!-- ==================== FOOTER ==================== -->
     <footer>
-        <p>© 2026 Haseeb H | Cloud & DevOps Portfolio</p>
+        <div class="footer-content">
+            <div class="footer-socials">
+                <a href="https://github.com/haseeb-2005" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/haseeb-h-900951349" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="mailto:haseebofficial2005@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                <a href="https://wa.me/919947467579" target="_blank" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+            <p>© 2026 <span class="gradient-text">Haseeb H</span> — Cloud & DevOps Portfolio</p>
+        </div>
     </footer>
 
-    <script>
-        const toggleBtn = document.getElementById('theme-toggle');
-        const htmlEl = document.documentElement;
+    <!-- ==================== DEMO MODALS ==================== -->
 
-        toggleBtn.addEventListener('click', () => {
-            const currentTheme = htmlEl.getAttribute('data-theme');
-            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-            htmlEl.setAttribute('data-theme', newTheme);
+    <!-- DASHBOARD DEMO -->
+    <div class="demo-modal" id="demo-dashboard">
+        <div class="demo-container">
+            <div class="demo-header">
+                <h3><i class="fa-solid fa-chart-line" style="color:var(--accent)"></i> DevOps Dashboard Monitor</h3>
+                <button class="demo-close" onclick="closeDemo('demo-dashboard')"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="demo-body">
+                <div class="dashboard-grid">
+                    <div class="dashboard-stat">
+                        <div class="stat-val" id="dash-cpu">0%</div>
+                        <div class="stat-lbl">CPU Usage</div>
+                    </div>
+                    <div class="dashboard-stat">
+                        <div class="stat-val" id="dash-mem">0%</div>
+                        <div class="stat-lbl">Memory Usage</div>
+                    </div>
+                    <div class="dashboard-stat">
+                        <div class="stat-val" id="dash-net">0 Mbps</div>
+                        <div class="stat-lbl">Network I/O</div>
+                    </div>
+                </div>
+                <div class="dashboard-charts">
+                    <div class="chart-panel">
+                        <h4>CPU & Memory — Real-time</h4>
+                        <canvas id="chart-line" height="200"></canvas>
+                    </div>
+                    <div class="chart-panel">
+                        <h4>Disk Usage</h4>
+                        <canvas id="chart-doughnut" height="200"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-            // Switch button icon
-            const icon = toggleBtn.querySelector('i');
-            if (newTheme === 'light') {
-                icon.className = 'fa-solid fa-sun';
-            } else {
-                icon.className = 'fa-solid fa-moon';
-            }
-        });
-    </script>
+    <!-- CONTAINER VISUALIZER DEMO -->
+    <div class="demo-modal" id="demo-containers">
+        <div class="demo-container">
+            <div class="demo-header">
+                <h3><i class="fa-brands fa-docker" style="color:var(--accent)"></i> Container Orchestration Visualizer</h3>
+                <button class="demo-close" onclick="closeDemo('demo-containers')"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="demo-body">
+                <div class="container-viz">
+                    <div class="container-row">
+                        <div class="docker-container">
+                            <div class="status-dot"></div>
+                            <i class="fa-solid fa-globe"></i>
+                            <span>nginx-proxy</span>
+                            <small>:80</small>
+                        </div>
+                    </div>
+                    <div class="container-row">
+                        <div class="docker-container">
+                            <div class="status-dot"></div>
+                            <i class="fa-brands fa-node-js"></i>
+                            <span>node-api</span>
+                            <small>:3000</small>
+                        </div>
+                        <div class="docker-container">
+                            <div class="status-dot"></div>
+                            <i class="fa-solid fa-bolt"></i>
+                            <span>redis-cache</span>
+                            <small>:6379</small>
+                        </div>
+                        <div class="docker-container">
+                            <div class="status-dot"></div>
+                            <i class="fa-solid fa-database"></i>
+                            <span>postgres-db</span>
+                            <small>:5432</small>
+                        </div>
+                    </div>
+                    <div class="container-row">
+                        <div class="docker-container">
+                            <div class="status-dot"></div>
+                            <i class="fa-solid fa-gear"></i>
+                            <span>worker-1</span>
+                            <small>background</small>
+                        </div>
+                        <div class="docker-container">
+                            <div class="status-dot"></div>
+                            <i class="fa-solid fa-gear"></i>
+                            <span>worker-2</span>
+                            <small>background</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-controls">
+                    <button onclick="initContainerDemo()"><i class="fa-solid fa-play"></i> Deploy Stack</button>
+                    <button class="danger" onclick="resetContainers()"><i class="fa-solid fa-stop"></i> Stop All</button>
+                </div>
+                <div class="container-log" id="container-log"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PIPELINE SIMULATOR DEMO -->
+    <div class="demo-modal" id="demo-pipeline">
+        <div class="demo-container">
+            <div class="demo-header">
+                <h3><i class="fa-solid fa-arrow-right-arrow-left" style="color:var(--accent)"></i> CI/CD Pipeline Simulator</h3>
+                <button class="demo-close" onclick="closeDemo('demo-pipeline')"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="demo-body">
+                <div class="pipeline-viz">
+                    <div class="pipeline-stage">
+                        <div class="stage-icon"><i class="fa-solid fa-code"></i></div>
+                        <div class="stage-info">
+                            <h4>Source Code</h4>
+                            <p>Pull latest changes from GitHub repository</p>
+                            <div class="pipeline-progress"><div class="pipeline-progress-fill"></div></div>
+                        </div>
+                        <div class="stage-status">Pending</div>
+                    </div>
+                    <div class="pipeline-stage">
+                        <div class="stage-icon"><i class="fa-solid fa-hammer"></i></div>
+                        <div class="stage-info">
+                            <h4>Build</h4>
+                            <p>Compile application and create Docker image</p>
+                            <div class="pipeline-progress"><div class="pipeline-progress-fill"></div></div>
+                        </div>
+                        <div class="stage-status">Pending</div>
+                    </div>
+                    <div class="pipeline-stage">
+                        <div class="stage-icon"><i class="fa-solid fa-vial"></i></div>
+                        <div class="stage-info">
+                            <h4>Test</h4>
+                            <p>Run unit tests, integration tests, and security scan</p>
+                            <div class="pipeline-progress"><div class="pipeline-progress-fill"></div></div>
+                        </div>
+                        <div class="stage-status">Pending</div>
+                    </div>
+                    <div class="pipeline-stage">
+                        <div class="stage-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                        <div class="stage-info">
+                            <h4>Security Scan</h4>
+                            <p>SAST analysis and container vulnerability scan</p>
+                            <div class="pipeline-progress"><div class="pipeline-progress-fill"></div></div>
+                        </div>
+                        <div class="stage-status">Pending</div>
+                    </div>
+                    <div class="pipeline-stage">
+                        <div class="stage-icon"><i class="fa-solid fa-cloud-arrow-up"></i></div>
+                        <div class="stage-info">
+                            <h4>Deploy to Staging</h4>
+                            <p>Push to staging environment for final validation</p>
+                            <div class="pipeline-progress"><div class="pipeline-progress-fill"></div></div>
+                        </div>
+                        <div class="stage-status">Pending</div>
+                    </div>
+                    <div class="pipeline-stage">
+                        <div class="stage-icon"><i class="fa-solid fa-rocket"></i></div>
+                        <div class="stage-info">
+                            <h4>Deploy to Production</h4>
+                            <p>Rolling update to production Kubernetes cluster</p>
+                            <div class="pipeline-progress"><div class="pipeline-progress-fill"></div></div>
+                        </div>
+                        <div class="stage-status">Pending</div>
+                    </div>
+                </div>
+                <div class="pipeline-controls">
+                    <button class="btn-primary" onclick="runPipeline()"><i class="fa-solid fa-play"></i> Run Pipeline</button>
+                    <button class="btn-secondary" onclick="initPipelineDemo()"><i class="fa-solid fa-arrow-rotate-right"></i> Reset</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ARCHITECTURE EXPLORER DEMO -->
+    <div class="demo-modal" id="demo-architecture">
+        <div class="demo-container">
+            <div class="demo-header">
+                <h3><i class="fa-solid fa-cloud" style="color:var(--accent)"></i> Cloud Architecture Explorer</h3>
+                <button class="demo-close" onclick="closeDemo('demo-architecture')"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="demo-body">
+                <p style="color:var(--text-secondary); text-align:center; margin-bottom:20px; font-size:0.9rem;">Click on any service to explore its connections and purpose</p>
+                <div class="architecture-viz">
+                    <div class="arch-canvas">
+                        <div class="arch-node" id="arch-route53" onclick="selectArchNode(this)"
+                            data-connects="arch-cloudfront"
+                            data-title="Amazon Route 53"
+                            data-desc="DNS web service that routes users to the application. Manages domain registration, DNS routing, and health checking of resources.">
+                            <i class="fa-solid fa-globe"></i>
+                            <span>Route 53</span>
+                        </div>
+                        <div class="arch-node" id="arch-cloudfront" onclick="selectArchNode(this)"
+                            data-connects="arch-route53,arch-alb"
+                            data-title="Amazon CloudFront"
+                            data-desc="Content Delivery Network (CDN) that distributes content globally with low latency. Caches static assets at edge locations and provides SSL termination.">
+                            <i class="fa-solid fa-bolt"></i>
+                            <span>CloudFront</span>
+                        </div>
+                        <div class="arch-node" id="arch-alb" onclick="selectArchNode(this)"
+                            data-connects="arch-cloudfront,arch-ec2a,arch-ec2b"
+                            data-title="Application Load Balancer"
+                            data-desc="Distributes incoming application traffic across multiple EC2 instances. Supports path-based routing, health checks, and automatic scaling.">
+                            <i class="fa-solid fa-network-wired"></i>
+                            <span>Load Balancer</span>
+                        </div>
+                        <div class="arch-node" id="arch-ec2a" onclick="selectArchNode(this)"
+                            data-connects="arch-alb,arch-rds,arch-s3"
+                            data-title="EC2 Instance (AZ-1)"
+                            data-desc="Virtual server running the application in Availability Zone 1. Runs Docker containers with the Node.js application behind an Nginx reverse proxy.">
+                            <i class="fa-solid fa-server"></i>
+                            <span>EC2 (AZ-1)</span>
+                        </div>
+                        <div class="arch-node" id="arch-ec2b" onclick="selectArchNode(this)"
+                            data-connects="arch-alb,arch-rds,arch-s3"
+                            data-title="EC2 Instance (AZ-2)"
+                            data-desc="Redundant application server in Availability Zone 2 for high availability. Identical configuration to AZ-1, ensuring failover capability.">
+                            <i class="fa-solid fa-server"></i>
+                            <span>EC2 (AZ-2)</span>
+                        </div>
+                        <div class="arch-node" id="arch-rds" onclick="selectArchNode(this)"
+                            data-connects="arch-ec2a,arch-ec2b"
+                            data-title="Amazon RDS"
+                            data-desc="Managed relational database service running PostgreSQL. Provides automated backups, Multi-AZ deployment for high availability, and read replicas.">
+                            <i class="fa-solid fa-database"></i>
+                            <span>RDS Database</span>
+                        </div>
+                        <div class="arch-node" id="arch-s3" onclick="selectArchNode(this)"
+                            data-connects="arch-ec2a,arch-ec2b,arch-cloudfront"
+                            data-title="Amazon S3"
+                            data-desc="Object storage for static assets, user uploads, and application logs. Provides 99.999999999% durability and integrates with CloudFront for CDN delivery.">
+                            <i class="fa-solid fa-hard-drive"></i>
+                            <span>S3 Storage</span>
+                        </div>
+                    </div>
+                    <div class="arch-info" id="arch-info">
+                        <h4 id="arch-info-title"></h4>
+                        <p id="arch-info-desc"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== SCRIPTS (CDN) ==================== -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
